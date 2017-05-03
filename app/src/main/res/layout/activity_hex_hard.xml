@@ -1,0 +1,1019 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hex_hard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="binarygame.zxdmjr.com.binarygame.HexHard">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayoutXH"
+        android:layout_height="40dp">
+
+        <binarygame.zxdmjr.com.binarygame.CustomButton
+            android:text="Ex."
+            android:layout_height="wrap_content"
+            android:id="@+id/btnExampleXHard"
+
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:background="@android:color/transparent"
+            tools:ignore="HardcodedText" />
+
+        <binarygame.zxdmjr.com.binarygame.CustomButton
+            android:text="128"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnExampleXH128"
+
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:background="@drawable/bg_rounded_corner_2" />
+
+        <binarygame.zxdmjr.com.binarygame.CustomButton
+            android:text="64"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnExampleXH64"
+
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:background="@drawable/bg_rounded_corner" />
+
+        <binarygame.zxdmjr.com.binarygame.CustomButton
+            android:text="32"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnExampleXH32"
+
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:background="@drawable/bg_rounded_corner" />
+
+        <binarygame.zxdmjr.com.binarygame.CustomButton
+            android:text="16"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnExampleXH16"
+
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:background="@drawable/bg_rounded_corner" />
+
+        <binarygame.zxdmjr.com.binarygame.CustomButton
+            android:text="8"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnExampleXH8"
+
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:background="@drawable/bg_rounded_corner" />
+
+        <binarygame.zxdmjr.com.binarygame.CustomButton
+            android:text="4"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnExampleXH4"
+
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:background="@drawable/bg_rounded_corner" />
+
+        <binarygame.zxdmjr.com.binarygame.CustomButton
+            android:text="2"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnExampleXH2"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:background="@drawable/bg_rounded_corner" />
+
+        <binarygame.zxdmjr.com.binarygame.CustomButton
+            android:text="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnExampleXH1"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:background="@drawable/bg_rounded_corner_2" />
+
+        <binarygame.zxdmjr.com.binarygame.CustomButton
+            android:text="81"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnExampleXH10"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:background="@drawable/button_bg" />
+    </LinearLayout>
+
+    <binarygame.zxdmjr.com.binarygame.CustomTextView
+        android:text="0:00"
+        android:layout_width="match_parent"
+        android:id="@+id/tvTimerXH"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_below="@+id/linearLayoutXH"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_height="30dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tvTimerXH"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearyLayoutXH2"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH11"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                tools:ignore="HardcodedText"
+                style="@style/Widget.AppCompat.Button"
+                android:background="@drawable/bg_rounded_corner" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH12"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rounded_corner"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_margin="1dp"
+                tools:ignore="HardcodedText" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH13"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rounded_corner"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_margin="1dp"
+                tools:ignore="HardcodedText" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH14"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rounded_corner"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_margin="1dp"
+                tools:ignore="HardcodedText" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH15"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                tools:ignore="HardcodedText"
+                style="@style/Widget.AppCompat.Button"
+                android:background="@drawable/bg_rounded_corner" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH16"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                tools:ignore="HardcodedText"
+                style="@style/Widget.AppCompat.Button"
+                android:background="@drawable/bg_rounded_corner" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH17"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                tools:ignore="HardcodedText"
+                style="@style/Widget.AppCompat.Button"
+                android:background="@drawable/bg_rounded_corner" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH18"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                tools:ignore="HardcodedText"
+                style="@style/Widget.AppCompat.Button"
+                android:background="@drawable/bg_rounded_corner" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH19"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/button_bg_2"
+                android:layout_margin="1dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH21"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH22"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH23"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH24"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH25"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH26"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH27"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH28"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH29"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/button_bg_2"
+                android:layout_margin="1dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH31"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH32"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rounded_corner"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH33"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH34"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH35"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH36"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH37"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH38"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH39"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/button_bg_2"
+                android:layout_margin="1dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH41"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH42"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH43"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH44"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH45"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH46"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH47"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH48"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH49"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/button_bg_2"
+                android:layout_margin="1dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH51"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH52"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH53"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH54"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH55"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH56"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH57"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH58"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH59"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/button_bg_2"
+                android:layout_margin="1dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH61"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH62"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH63"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH64"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH65"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH66"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH67"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH68"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH69"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/button_bg_2"
+                android:layout_margin="1dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH71"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH72"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH73"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH74"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH75"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH76"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH77"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH78"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH79"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/button_bg_2"
+                android:layout_margin="1dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH81"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH82"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH83"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH84"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH85"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH86"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH87"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH88"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/bg_rounded_corner"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH89"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/button_bg_2"
+                android:layout_margin="1dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH91"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/button_bg_2"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH92"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/button_bg_2"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH93"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/button_bg_2"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH94"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/button_bg_2"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH95"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/button_bg_2"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH96"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/button_bg_2"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH97"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/button_bg_2"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH98"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/button_bg_2"
+                android:layout_margin="1dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRowXH99"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_margin="1dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

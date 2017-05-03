@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_how_to_play"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#008080"
+    tools:context="binarygame.zxdmjr.com.binarygame.HowToPlay">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/linearLayoutHTP1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <binarygame.zxdmjr.com.binarygame.CustomTextView
+                android:text="Easy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHTPMsgEasy"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="@android:color/black"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="2dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomTextView
+                android:text="8-4-2-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHTPEasy"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomTextView
+                android:text="Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHTPMsgMedium"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomTextView
+                android:text="32-16-8-4-2-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHTPMedium"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomTextView
+                android:text="Hard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHTPMsgHard"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomTextView
+                android:text="128-64-32-16-8-4-2-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHTPHard"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomTextView
+                android:text="Rows"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHTPRows"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="7dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold|italic" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomTextView
+                android:text="The left-most box represents the most significant bit, while the right-most box is the least significant bit."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHTPRowMsg"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                style="@android:style/Widget.Holo.TextView"
+                android:textStyle="italic"
+                android:textColor="@android:color/background_dark"
+                android:textColorHighlight="@android:color/black" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomTextView
+                android:text="For example, if we have found the decimal number 13 to the right of a row of bits, those some bits should look like this:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHTPRowMsg2"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                style="@android:style/Widget.Holo.TextView"
+                android:textStyle="italic"
+                android:textColor="@android:color/background_dark"
+                android:textColorHighlight="@android:color/black" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <binarygame.zxdmjr.com.binarygame.CustomButton
+                    android:text="8"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnHTPE8"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@drawable/bg_rounded_corner_2"
+                    android:layout_margin="2dp" />
+
+                <binarygame.zxdmjr.com.binarygame.CustomButton
+                    android:text="4"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnHTPE4"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@drawable/bg_rounded_corner_2"
+                    android:layout_margin="2sp" />
+
+                <binarygame.zxdmjr.com.binarygame.CustomButton
+                    android:text="2"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnHTPE2"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@drawable/bg_rounded_corner"
+                    android:layout_margin="2dp" />
+
+                <binarygame.zxdmjr.com.binarygame.CustomButton
+                    android:text="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnHTPE1"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@drawable/bg_rounded_corner_2"
+                    android:layout_margin="2dp" />
+
+                <binarygame.zxdmjr.com.binarygame.CustomButton
+                    android:text="13"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnHTPE10"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@drawable/button_bg"
+                    android:layout_margin="2dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:text="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnHTPE11"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@drawable/bg_rounded_corner_2"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:text="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnHTPE12"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@drawable/bg_rounded_corner_2"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:text="0"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnHTPE13"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@drawable/bg_rounded_corner"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:text="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnHTPE14"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@drawable/bg_rounded_corner_2"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:text="13"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnHTPE15"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@drawable/button_bg"
+                    android:layout_margin="2dp" />
+
+            </LinearLayout>
+
+            <binarygame.zxdmjr.com.binarygame.CustomTextView
+                android:text="Note: the box containing the decimal number 13 is colored pink because as you continue toggling, any rows and columns are automatically converted from blue to pink if that particular row or column is already correct."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHTPRowMsg3"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                style="@android:style/Widget.Holo.TextView"
+                android:textStyle="italic"
+                android:textColor="@android:color/background_dark"
+                android:textColorHighlight="@android:color/black" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomTextView
+                android:text="Columns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHTPColumns"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="7dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold|italic" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomTextView
+                android:text="The top-most box is the most significant bit, while the bottom-most box is the least significant bit."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHTPRowMsg4"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                style="@android:style/Widget.Holo.TextView"
+                android:textStyle="italic"
+                android:textColor="@android:color/background_dark"
+                android:textColorHighlight="@android:color/black" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomTextView
+                android:text="For example, if we found 13 under a column of bits, the bits should be toggled as follows:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHTPRowMsg5"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                style="@android:style/Widget.Holo.TextView"
+                android:textStyle="italic"
+                android:textColor="@android:color/background_dark"
+                android:textColorHighlight="@android:color/black" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:id="@+id/linearLayoutHTP2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <binarygame.zxdmjr.com.binarygame.CustomButton
+                    android:text="8"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnHTPE81"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@drawable/bg_rounded_corner_2"
+                    android:layout_margin="2dp" />
+
+                <binarygame.zxdmjr.com.binarygame.CustomButton
+                    android:text="4"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnHTPE41"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@drawable/bg_rounded_corner_2"
+                    android:layout_margin="2dp" />
+
+                <binarygame.zxdmjr.com.binarygame.CustomButton
+                    android:text="2"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnHTPE21"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@drawable/bg_rounded_corner"
+                    android:layout_margin="2dp" />
+
+                <binarygame.zxdmjr.com.binarygame.CustomButton
+                    android:text="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnHTPE111"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@drawable/bg_rounded_corner_2"
+                    android:layout_margin="2dp" />
+
+                <binarygame.zxdmjr.com.binarygame.CustomButton
+                    android:text="13"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnHTPE101"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@drawable/button_bg"
+                    android:padding="2dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <binarygame.zxdmjr.com.binarygame.CustomButton
+                    android:text="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnHTPE1111"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@drawable/bg_rounded_corner_2"
+                    android:layout_margin="2dp" />
+
+                <binarygame.zxdmjr.com.binarygame.CustomButton
+                    android:text="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnHTPE121"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@drawable/bg_rounded_corner_2"
+                    android:layout_margin="2dp" />
+
+                <binarygame.zxdmjr.com.binarygame.CustomButton
+                    android:text="0"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnHTPE131"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@drawable/bg_rounded_corner"
+                    android:layout_margin="2dp" />
+
+                <binarygame.zxdmjr.com.binarygame.CustomButton
+                    android:text="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnHTPE141"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@drawable/bg_rounded_corner_2"
+                    android:layout_margin="2dp" />
+
+                <binarygame.zxdmjr.com.binarygame.CustomButton
+                    android:text="13"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnHTPE151"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@drawable/button_bg"
+                    android:layout_margin="2dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+            <binarygame.zxdmjr.com.binarygame.CustomTextView
+                android:text="This is beacuse the decimal values of eash bit are 8-4-2-1(8 is the most significant bit, while 1 is the least significant) and 13 is equal to 8+4+1, so we only toggle the bits representing 8,4 and 1 resulting to the binary number 1101."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHTPRowMsg6"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                style="@android:style/Widget.Holo.TextView"
+                android:textStyle="italic"
+                android:textColor="@android:color/background_dark"
+                android:textColorHighlight="@android:color/black" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomTextView
+                android:text="You win when the correct bits have been toggled for the entire grid!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHTPRowMsg7"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                style="@android:style/Widget.Holo.TextView"
+                android:textStyle="italic"
+                android:textColor="@android:color/background_dark"
+                android:textColorHighlight="@android:color/black" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomTextView
+                android:text="Those rule not noly for decimal number but also hexadecimal and octal number."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHTPRowMsg8"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                style="@android:style/Widget.Holo.TextView"
+                android:textStyle="italic"
+                android:textColor="@android:color/background_dark"
+                android:textColorHighlight="@android:color/black" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomTextView
+                android:text="Simple Tricks:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHTPSmpTricks"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="7dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold|italic" />
+
+            <binarygame.zxdmjr.com.binarygame.CustomTextView
+                android:text="In hexadecimal number you pair 4 bits for one digit
+	and octal number you pair 3 bits as one digit.
+	example In hex (F8) for F 4 bit likes 1111 and for 8 4 bit likes 1000
+	So, (F8) in binary 11111000."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHTPRowMsg10"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                style="@android:style/Widget.Holo.TextView"
+                android:textStyle="italic"
+                android:textColor="@android:color/background_dark"
+                android:textColorHighlight="@android:color/black" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

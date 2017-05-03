@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#008080"
+    tools:context="binarygame.zxdmjr.com.binarygame.About">
+
+
+    <ImageView
+        app:srcCompat="@mipmap/ic_developer_pic"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="120dp"
+        android:layout_width="120dp" />
+
+    <binarygame.zxdmjr.com.binarygame.CustomTextView
+        android:text="Md. Jewel Rana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDevName"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@android:color/black" />
+
+    <binarygame.zxdmjr.com.binarygame.CustomTextView
+        android:text="Northern University Bangladesh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDevUV"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_below="@+id/tvDevName"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@android:color/black" />
+
+    <binarygame.zxdmjr.com.binarygame.CustomTextView
+        android:text="Email: zxdmjr@gmail.com"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="55dp"
+        android:id="@+id/tvEmail"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/black"
+        android:textColorLink="@android:color/black" />
+
+    <binarygame.zxdmjr.com.binarygame.CustomTextView
+        android:text="https://bd.linkedin.com/in/dutchmanbd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:id="@+id/tvLinkedin"
+        android:layout_below="@+id/tvEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/black"
+        android:textColorLink="@android:color/black" />
+
+</RelativeLayout>
